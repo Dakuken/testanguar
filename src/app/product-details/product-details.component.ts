@@ -27,7 +27,6 @@ export class ProductDetailsComponent implements OnInit {
       (product) => product.id === productIdFromRoute
     );
   }
-
   addToCart(product: Product) {
     this.cartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
